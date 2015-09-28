@@ -1,0 +1,33 @@
+DROP TABLE IF EXISTS `unicom7`.`customtable`;
+CREATE TABLE  `unicom7`.`customtable` (
+  `column1` varchar(100) NOT NULL DEFAULT '',
+  `column2` varchar(100) DEFAULT '',
+  `column3` varchar(45) DEFAULT '',
+  `column4` varchar(45) DEFAULT '',
+  `column5` varchar(45) DEFAULT '',
+  `column6` varchar(45) DEFAULT '',
+  `column7` varchar(45) DEFAULT '',
+  `column8` varchar(45) DEFAULT '',
+  `column9` varchar(45) DEFAULT '',
+  `column10` varchar(45) DEFAULT '',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `report_name` varchar(45) NOT NULL DEFAULT '',
+  `column_count` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `unicom7`.`reportcontent`;
+CREATE TABLE  `unicom7`.`reportcontent` (
+  `report_name` varchar(45) DEFAULT NULL,
+  `column1` varchar(200) DEFAULT '',
+  `column2` varchar(200) DEFAULT '',
+  `column3` varchar(200) DEFAULT '',
+  `column4` varchar(200) DEFAULT '',
+  `column5` varchar(200) DEFAULT '',
+  `column6` varchar(200) DEFAULT '',
+  `column7` varchar(200) DEFAULT '',
+  `column8` varchar(200) DEFAULT '',
+  `column9` varchar(200) DEFAULT '',
+  `column10` varchar(200) DEFAULT '',
+  `column_count` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
