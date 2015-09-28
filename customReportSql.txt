@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS `unicom7`.`customtable`;
+DROP TABLE IF EXISTS `***`.`customtable`;
 CREATE TABLE  `unicom7`.`customtable` (
   `column1` varchar(100) NOT NULL DEFAULT '',
   `column2` varchar(100) DEFAULT '',
@@ -16,7 +16,7 @@ CREATE TABLE  `unicom7`.`customtable` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `unicom7`.`reportcontent`;
+DROP TABLE IF EXISTS `***`.`reportcontent`;
 CREATE TABLE  `unicom7`.`reportcontent` (
   `report_name` varchar(45) DEFAULT NULL,
   `column1` varchar(200) DEFAULT '',
